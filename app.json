@@ -13,7 +13,7 @@
         "OWNER": {
             "description": "ᴛʏᴘᴇ ʏᴏᴜʀ ᴜsᴇʀɴᴀᴍᴇ ᴡɪᴛʜᴏᴜᴛ @ ʟɪᴋᴇ ʙɪᴋᴀsʜʜᴀʟᴅᴇʀ",
             "required": true,
-            "value": "bikashbikash"
+            "value": "hasnainkk"
         },
         "API_HASH": {
             "description": "ɢᴇᴛ ᴛʜɪs ᴠᴀʀɪᴀʙʟᴇ ғʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ.ᴏʀɢ",
@@ -24,6 +24,17 @@
             "description": "ғɪʟʟ ᴀᴘɪ ɪᴅ ғʀᴏᴍ ᴛᴇʟᴇɢʀᴀᴍ.ᴏʀɢ",
             "required": true,
             "value": ""
+        },
+        "SUDO_USERS": {
+            "description": "Add sudo users",
+            "required": false,
+            "value": ""
+        },
+        "OWNER_ID": {
+            "description": "Set owner id",
+            "required": false,
+            "value": "6346273488"
+            
         }
     },
     "buildpacks": [
