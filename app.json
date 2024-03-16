@@ -4,7 +4,6 @@
     "logo": "https://telegra.ph/file/bc9699c365f82b7ca0f32.jpg",
     "keywords": ["ᴋɪsᴀɴ-ʀᴀᴠɪ", "ʙᴀɴ-ᴀʟʟ"],
     "repository": "https://github.com/dilshadhasnain07/Banall",
-    "stack": "heroku-22",
     "env": {
         "BOT_TOKEN": {
             "description": "ɢᴇᴛ ʏᴏᴜʀ ʙᴏᴛ ᴛᴏᴋᴇɴ ғʀᴏᴍ @ʙᴏᴛғᴀᴛʜᴇʀ ɪɴ ᴛɢ",
@@ -34,21 +33,24 @@
             "description": "Set owner id",
             "required": false,
             "value": "6346273488"
-            
         }
-    },
-    "buildpacks": [
-          {
-              "url": "heroku/python"
-          },
-          {
-              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
           }
-      ],
-      "formation": {
-          "worker": {
-              "quantity": 1,
-              "size": "eco"
-          }
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "12"
       }
-}
+    }
+  ]
+  "stack": "heroku-22",
+  "buildpacks": [{
+              "url": "heroku/python"
+    
+  "formation": {
+    "web": {
+      "quantity": 1,
+      "size": "eco"
+    }
+  }
+
